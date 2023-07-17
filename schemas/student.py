@@ -4,7 +4,7 @@ def studentEntity(item) -> dict:
         "nisn":item["nisn"],
         "name":item["name"],
         "kelas":item["kelas"],
-        "jurusan":item["jurusan"],
+        "jurusan": item.get("jurusan", ""),
         "jenis_kelamin":item["jenis_kelamin"]
     }
     
